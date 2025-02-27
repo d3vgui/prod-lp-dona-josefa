@@ -1,6 +1,8 @@
 :root {
-  --primary: #d2caae;
-  --secondary: #a1b0ac;
+  --first-color: #d2caae;
+  --second-color: #a1b0ac;
+  --third-color: #f5f1e8;
+  --fourth-color: #e2ddc9;
   --black: #000;
   --black-bg: #1f201e;
   --white: #fff;
@@ -14,7 +16,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-text);
-  color: var(--white);
 }
 
 html {
@@ -46,7 +47,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: var(--first-color);
   border-radius: 10px;
 }
 
@@ -73,7 +74,7 @@ header {
 
 header.scrolled {
   background-color: var(--black-bg);
-  border-color: var(--primary);
+  border-color: var(--first-color);
 }
 
 header img {
@@ -107,7 +108,7 @@ ul{
   content: "";
   width: 0%;
   height: 1px;
-  background-color: var(--primary);
+  background-color: var(--first-color);
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -190,7 +191,7 @@ ul{
 footer {
   padding: 80px 0;
   background-color: var(--black-bg);
-  border-top: 2px solid var(--primary);
+  border-top: 3px solid var(--first-color);
 }
 
 footer .content-footer {
@@ -216,12 +217,13 @@ footer .content-footer ul {
 
 footer .content-footer li {
   list-style-type: none;
+  color: var(--white);
 }
 
 
 footer .content-footer h3 {
   font-size: 18px;
-  color: var(--primary);
+  color: var(--first-color);
   font-weight: 580;
   font-family: var(--font-title);
 }
@@ -234,7 +236,7 @@ footer .content-footer a {
 }
 
 footer .content-footer a:hover {
-  color: var(--primary);
+  color: var(--first-color) !important;
 }
 
 footer .content-footer i {
