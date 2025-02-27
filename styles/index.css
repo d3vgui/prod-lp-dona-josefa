@@ -60,6 +60,7 @@
 #section-one .arrow i {
     font-size: 35px;
     animation: upDown 1.5s infinite alternate ease-in-out;
+    color: var(--white);
 }
 
 @keyframes upDown {
