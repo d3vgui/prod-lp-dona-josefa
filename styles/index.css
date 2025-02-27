@@ -449,7 +449,7 @@
 }
 
 #section-six .content-sec-six h2, h3{
-    color: var(--first-color) !important;
+    color: var(--second-color) !important;
     font-family: var(--font-title);
 }
 
