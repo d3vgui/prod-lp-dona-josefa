@@ -186,6 +186,35 @@ ul{
   }
 }
 
+/* ----- whats button ----- */
+
+.whats-button {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 9999;
+  animation: moveRightLeft 2s infinite alternate ease-in-out;
+}
+
+.whats-button img {
+  height: 80px;
+  width: 80px;
+}
+
+@keyframes moveRightLeft {
+  0% {
+    right: 10px;
+  }
+
+  50% {
+    right: 40px;
+  }
+
+  100% {
+    right: 10px;
+  }
+}
+
 /* ----- FOOTER ----- */
 
 footer {
