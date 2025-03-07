@@ -44,6 +44,15 @@
   filter: brightness(40%);
 }
 
+
+#section-one .swiper-slide .img-bg {
+  display: block;
+  width: 100% !important;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
 #section-one .swiper-button-next,
 .swiper-button-prev {
   color: var(--first-color) !important;
