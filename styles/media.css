@@ -1,5 +1,4 @@
 @media (max-width: 768px) {
-
   /* ----- SECTION TWO ----- */
 
   #section-two {
@@ -54,32 +53,44 @@
 
   footer .logo-footer img {
     width: 200px;
-}
+  }
 }
 
-@media (max-width: 425px){
+@media (max-width: 575px) {
+  #section-six .content-right {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  #section-six .content-right form {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 425px) {
   #section-one .text-slide h2 {
     font-size: 40px;
-}
+  }
 
-#section-one .text-slide p {
-  font-size: 16px;
-  width: 300px;
-}
+  #section-one .text-slide p {
+    font-size: 16px;
+    width: 300px;
+  }
 
-#section-one .swiper-button-next:after {
-  font-size: 25px !important;
-}
+  #section-one .swiper-button-next:after {
+    font-size: 25px !important;
+  }
 
-#section-one .swiper-button-prev:after {
-  font-size: 25px !important;
-}
+  #section-one .swiper-button-prev:after {
+    font-size: 25px !important;
+  }
 
-#section-one .btn-contact-us a {
-  background-color: var(--first-color);
-  color: var(--black);
-  text-decoration: none;
-  padding: 10px 15px;
-  transition: 0.4s;
-}
+  #section-one .btn-contact-us a {
+    background-color: var(--first-color);
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.4s;
+  }
 }

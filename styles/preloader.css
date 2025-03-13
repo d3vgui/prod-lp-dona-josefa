@@ -1,0 +1,78 @@
+/* Preloader ocupa toda a tela */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--black);  /* Fundo preto */
+	z-index: 9999;  /* Mantém acima de tudo */
+	display: flex;
+	flex-direction: column;  /* Organiza o texto e loader em coluna */
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: opacity 3s cubic-bezier(0.68, -0.55, 0.27, 1.55), visibility 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);  /* Easing mais agressivo */
+}
+
+/* Texto de carregamento */
+.loading-text {
+	color: white;
+	font-size: 24px;
+	opacity: 0;
+	animation: fadeInText 2.5s ease-in-out forwards;  /* Animação do texto */
+	margin-bottom: 20px;  /* Espaço entre o texto e o loader */
+	text-align: center;
+}
+
+/* Animação para o texto aparecer suavemente */
+@keyframes fadeInText {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Loader abaixo do texto */
+.loader {
+	border: 3px solid #efeee8;
+	border-top: 3px solid var(--first-color);  /* Alterar cor do loader aqui */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+	animation: fadeInLoader 2.5s ease-in-out forwards, spin 1.35s linear infinite; /* Animações do loader */
+}
+
+/* Animação do loader para aparecer suavemente */
+@keyframes fadeInLoader {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* Animação para o loader girar */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Desabilita o scroll enquanto carrega */
+body.no-scroll {
+	overflow: hidden;
+}
+
+

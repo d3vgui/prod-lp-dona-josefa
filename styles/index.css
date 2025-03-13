@@ -64,7 +64,7 @@
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 10;
 }
 
 #section-one .text-slide h2 {
@@ -265,16 +265,8 @@
 
 #section-four {
   padding: 100px 0;
-  background-color: var(--third-color);
+  background-color: var(--fifth-color);
   min-height: 100vh;
-  /* background-image: 
-        linear-gradient(to top, #1f201e 0%, rgba(31, 32, 30, 0) 40%), 
-        linear-gradient(to bottom, #1f201e 0%, rgba(31, 32, 30, 0) 40%), 
-        url(../images/bg-madeira.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply; */
 }
 
 #section-four .content-sec-four {
@@ -290,12 +282,16 @@
 
 #section-four .content-right h2 {
   font-family: var(--font-title);
-  color: var(--second-color);
+  color: var(--first-color);
 }
 
 #section-four .content-right h3 {
   font-family: var(--font-title);
-  color: var(--second-color) !important;
+  color: var(--first-color) !important;
+}
+
+#section-four .content-right p{
+  color: var(--white);
 }
 
 #section-four .accordion-item {
