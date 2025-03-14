@@ -1,20 +1,4 @@
-/* ----- SECTION ONE ----- */
-
-/* #section-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.384);
-    height: 120vh;
-    background-image: 
-        linear-gradient(to top, #1f201e 0%, rgba(31, 32, 30, 0) 40%), 
-        url(../images/background-3.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-} */
+  /* ----- SECTION ONE ----- */
 
 #section-one .swiper {
   margin-left: auto;
@@ -50,7 +34,7 @@
   width: 100% !important;
   height: 100vh;
   object-fit: cover;
-  filter: brightness(70%);
+  filter: brightness(30%);
 }
 
 #section-one .swiper-button-next,
@@ -103,7 +87,7 @@
 /* ----- SECTION TWO ----- */
 
 #section-two {
-  padding: 140px 0;
+  padding: 120px 0;
   background-color: var(--third-color);
 }
 
@@ -120,12 +104,12 @@
 }
 
 #section-two .content-right h2 {
-  color: var(--second-color);
+  color: var(--fifth-color);
   font-family: var(--font-title);
 }
 
 #section-two .content-right h3 {
-  color: var(--second-color) !important;
+  color: var(--fifth-color) !important;
   font-family: var(--font-title);
 }
 
@@ -147,6 +131,57 @@
 }
 
 #section-two .btn-know-more i {
+  margin-left: 7px;
+  font-size: 17px;
+  color: var(--black);
+}
+
+/* SECTION TERTULIA */
+
+#section-tertulia{
+  padding: 100px 0;
+  background-color: var(--fifth-color);
+}
+
+#section-tertulia .content-sec-tertulia{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#section-tertulia .left-content img{
+  height: 100%;
+  width: 100%;
+}
+
+#section-tertulia .right-content h2{
+  color: var(--first-color);
+  font-family: var(--font-title);
+  text-transform: uppercase;
+}
+
+#section-tertulia .right-content p{
+  color: var(--white);
+}
+
+#section-tertulia .btn-know-more {
+  margin-top: 45px;
+}
+
+#section-tertulia .btn-know-more a {
+  background-color: var(--first-color);
+  color: var(--black);
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: 0.4s;
+}
+
+#section-tertulia .btn-know-more a:hover {
+  margin-left: 30px;
+  background-color: var(--second-color);
+}
+
+#section-tertulia .btn-know-more i {
   margin-left: 7px;
   font-size: 17px;
   color: var(--black);

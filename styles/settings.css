@@ -275,3 +275,20 @@ footer .content-footer i {
   text-decoration: none;
   margin-right: 8px;
 }
+
+@media (max-width: 991px){
+
+  footer{
+    width: 100vw;
+  }
+
+  footer .content-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  footer li{
+    width: 80vw;
+  }
+}
