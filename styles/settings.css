@@ -276,6 +276,28 @@ footer .content-footer i {
   margin-right: 8px;
 }
 
+footer .line{
+  height: 1px;
+  margin-top: 60px;
+  background-color: var(--first-color);
+}
+
+footer .dev{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+footer .dev a{
+  color: gray;
+  text-decoration: none;
+}
+
+footer .dev i{
+  margin-right: 10px;
+}
+
 @media (max-width: 991px){
 
   footer{

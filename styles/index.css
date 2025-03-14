@@ -296,6 +296,30 @@
   transform: translate(10px, -30px);
 }
 
+#section-three .content-swiper{
+  margin-top: 120px;
+}
+
+#section-three .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  
+}
+
+#section-three .swiper-slide img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#section-three .swiper-button-next,
+.swiper-button-prev {
+  color: var(--first-color) !important;
+}
+
 /* ----- SECTION FOUR ----- */
 
 #section-four {
