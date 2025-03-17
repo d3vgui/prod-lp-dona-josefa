@@ -1,4 +1,4 @@
-/* .preloader {
+.preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -67,4 +67,4 @@
 
 body.no-scroll {
   overflow: hidden;
-} */
+}
