@@ -1,4 +1,13 @@
 @media (max-width: 991px){
+
+  #section-two .content-sec-two{
+    flex-direction: column-reverse;
+  }
+
+  #section-two .content-left{
+    margin-top: 60px;
+  }
+
   #section-tertulia .content-sec-tertulia{
     display: flex;
     flex-direction: column-reverse;
