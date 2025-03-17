@@ -127,7 +127,6 @@
 
 #section-two .btn-know-more a:hover {
   margin-left: 30px;
-  background-color: var(--second-color);
 }
 
 #section-two .btn-know-more i {
@@ -178,7 +177,6 @@
 
 #section-tertulia .btn-know-more a:hover {
   margin-left: 30px;
-  background-color: var(--second-color);
 }
 
 #section-tertulia .btn-know-more i {
@@ -232,6 +230,7 @@
 
 #section-three .accordion-header:hover {
   background: var(--second-color);
+  color: var(--white);
 }
 
 #section-three .accordion-content {
@@ -278,7 +277,6 @@
 
 #section-three .btn-contact-us a:hover {
   margin-left: 30px;
-  background-color: var(--second-color);
 }
 
 #section-three .btn-contact-us i {
@@ -372,7 +370,7 @@
 }
 
 #section-four .accordion-header:hover {
-  background: var(--second-color);
+  background-color: var(--fourth-color);
 }
 
 #section-four .accordion-content {
@@ -424,7 +422,7 @@
 
 #section-four .btn-contact-us a:hover {
   margin-left: 30px;
-  background-color: var(--second-color);
+  background-color: var(--fourth-color);
 }
 
 #section-four .btn-contact-us i {
@@ -480,6 +478,7 @@
 #section-five .content-left a:hover {
   margin-left: 30px;
   background-color: var(--second-color);
+  color: var(--white);
 }
 
 #section-five .content-left i {
@@ -514,6 +513,7 @@
 #section-five .content-right a:hover {
   margin-left: 30px;
   background-color: var(--second-color);
+  color: var(--white);
 }
 
 /* ----- SECTION SIX ----- */
@@ -574,7 +574,7 @@ h3 {
 
 #section-six form button {
   margin-top: 20px;
-  color: var(--black);
+  color: var(--white);
   padding: 10px 40px;
   border: none;
   background-color: var(--second-color);

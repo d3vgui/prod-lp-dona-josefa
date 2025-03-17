@@ -1,6 +1,6 @@
 :root {
   --first-color: #d2caae;
-  --second-color: #a1b0ac;
+  --second-color: #507b60;
   --third-color: #f5f1e8;
   --fourth-color: #e2ddc9;
   --fifth-color: #507b60;
@@ -253,7 +253,7 @@ footer .content-footer li {
 
 footer .content-footer h3 {
   font-size: 18px;
-  color: var(--first-color);
+  color: var(--first-color) !important;
   font-weight: 580;
   font-family: var(--font-title);
 }
