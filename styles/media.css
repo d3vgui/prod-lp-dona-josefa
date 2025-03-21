@@ -24,6 +24,7 @@
 
   #section-three .content-right{
     margin-top: 70px;
+    height: auto;
   }
 
   #section-four .content-sec-four{
@@ -37,6 +38,7 @@
   #section-four .content-left img{
     height: 300px;
   }
+
 }
 
 @media (max-width: 768px) {
