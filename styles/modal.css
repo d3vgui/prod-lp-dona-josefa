@@ -1,0 +1,88 @@
+.modal-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black-bg);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 30;
+}
+
+.modal-content {
+  background-color: var(--first-color) !important;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px !important;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.modal-content img {
+  height: 80px;
+  width: 70px;
+}
+
+.modal-content .text {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content .text span {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.modal-content .text h3{
+  color: var(--black) !important;
+  margin-bottom: 20px;
+}
+
+.modal-content .text p {
+  color: var(--black);
+}
+
+.buttons-modal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.ok-button {
+  background: var(--fifth-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons-modal a{
+  background: var(--third-color) !important;
+  border: 2px solid var(--fifth-color) !important;
+  color: var(--black);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none !important;
+}
+
+@media (max-width: 430px){
+  .modal-content {
+    width: 300px !important;
+}
+
+.modal-content .text {
+  height: auto;
+}
+
+}

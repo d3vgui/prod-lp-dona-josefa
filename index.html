@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Descubre Doña Josefa, un tequila premium que honra la tradición mexicana con autenticidad, historia y un sabor inigualable. Libertad y tradición em cada sorbo.">
+    content="Descubre Doña Josefa, un tequila premium que honra la tradición mexicana con autenticidad, historia y un sabor inigualable. Libertad y tradición en cada sorbo.">
   <link rel="stylesheet" href="/styles/settings.css">
   <link rel="stylesheet" href="/styles/index.css">
   <link rel="stylesheet" href="/styles/media.css">
   <link rel="stylesheet" href="styles/preloader.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/quiz-modal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -23,7 +25,9 @@
   <script src="/js/contact-form.js" defer></script>
   <script src="/js/preloader.js" defer></script>
   <script src="/js/gsap.js" defer></script>
-  <title>Doña Josefa - Libertad y tradición em cada sorbo</title>
+  <script src="/js/modal.js" defer></script>
+  <script src="/js/quiz-modal.js" defer></script>
+  <title>Doña Josefa - Libertad y tradición en cada sorbo</title>
 </head>
 
 <body>
@@ -33,6 +37,48 @@
       tequila. ¡Ven a descubrirlo!</p>
     <div class="loader" id="loader"></div>
   </div>
+
+  <div id="modal-bg" class="modal-bg">
+    <div class="modal-content">
+      <img class="img-responsive" loading="lazy" src="./images/logo-2-preto.webp" alt="LOGO" title="LOGO">
+      <div class="text">
+        <span>AVISO</span>
+        <h3>¿TIENES EDAD LEGAL PARA BEBER?</h3>
+        <p>Este sitio web está destinado únicamente a personas mayores de 18 años. El consumo de alcohol debe ser responsable y consciente. Al continuar navegando, confirmas que eres mayor de edad y que cumples con la normativa de consumo de bebidas alcohólicas en tu país. Disfruta con responsabilidad.</p>
+        </div>
+        <div class="buttons-modal">
+          <button class="ok-button" onclick="fecharModal()">SÍ</button>
+          <a href="https://www.responsibility.org/">NO</a>
+        </div>
+    </div>
+</div>
+
+<div id="quiz-modal" class="quiz-modal">
+  <div class="quiz-modal-content" id="quiz-content">
+      <h3 id="quiz-title">¡RESPONDE ESTA PREGUNTA Y OBTÉN 1 AÑO DE ENVÍO GRATIS!</h3>
+      <form id="quiz-form" onsubmit="return verificarResposta(event)">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, adipisci?</p>
+          <div class="question">
+            <label><input type="radio" name="quiz" value="Londres" required> RESPOSTA</label><br>
+            <label><input type="radio" name="quiz" value="Paris" required> RESPOSTA</label><br>
+            <label><input type="radio" name="quiz" value="Berlim" required> RESPOSTA</label><br>
+          </div>
+          <div class="buttons">
+              <button type="submit" class="submit-button">COMPROBAR RESPUESTA</button>
+              <button type="button" class="cancel-button" onclick="fecharQuizModal(event)">AHORA NO</button>
+          </div>
+      </form>
+      <div id="quiz-result" class="hidden">
+          <h3 id="quiz-title"></h3>
+          <p id="quiz-message"></p>
+          <div class="input-email">
+            <p id="email-error" class="error-message"></p>
+            <input type="email" id="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="btn-enviar" onclick="fecharQuizModalEmail(event)">PARA ENVIAR</button>
+          </div>
+      </div>
+  </div>
+</div>
 
   <header>
     <a id="logo" title="Logo" href="#section-one"><img loading="lazy" title="Logo" class="img-responsive"
@@ -71,7 +117,7 @@
             <div class="text-slide">
               <h2>HONESTIDAD</h2>
               <p>
-                Libertad y tradición em cada sorbo.
+                Libertad y tradición en cada sorbo.
               </p>
               <div class="btn-contact-us">
                 <a title="Haga clic aquí para contactarnos vía WhatsApp" href="https://wa.me/5255271603905?text=Hola%2C%20vine%20del%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n!
