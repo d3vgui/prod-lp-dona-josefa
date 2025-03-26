@@ -1,8 +1,9 @@
 setTimeout(() => {
-    const modal = document.getElementById("quiz-modal");
-    modal.classList.add("show");
-    document.body.classList.add("no-scroll");
-}, 22000);
+    const modalBg = document.getElementById("modal-bg");
+    if (getComputedStyle(modalBg).display === "none") {
+        abrirQuizModal();
+    }
+}, 20000);
 
 function verificarResposta(event) {
     event.preventDefault();
@@ -52,10 +53,10 @@ function fecharQuizModalEmail(event) {
     }).then(response => response.json())
       .then(data => {
           if (data.success) {
-              alert("E-mail enviado com sucesso!");
+              alert("¡Correo electrónico enviado exitosamente!");
               fecharQuizModal();
           } else {
-              alert("Erro ao enviar e-mail.");
+              alert("Error al enviar el correo electrónico.");
           }
       }).catch(error => console.error("Erro:", error));
 }

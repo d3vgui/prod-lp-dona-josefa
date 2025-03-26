@@ -92,6 +92,16 @@
 }
 
 @media (max-width: 575px) {
+
+#section-five .content-michelin a{
+  width: 300px !important;
+}
+
+#section-five .content-online a{
+  width: 300px !important;
+}
+
+
   #section-six .content-right {
     width: 100vw;
     display: flex;

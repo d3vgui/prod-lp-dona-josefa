@@ -9,7 +9,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtpout.secureserver.net",
+    port: 3535,
+    secure: true,
     auth: {
         user: process.env.EMAIL_USER, // Seu email
         pass: process.env.EMAIL_PASS  // Senha do app
@@ -23,15 +25,29 @@ app.post("/send-email", (req, res) => {
         from: process.env.EMAIL_USER,
         to: email,
         // basta editar a mensagem abaixo com o título e a mensagem do email
-        subject: "Parabéns! Você ganhou 1 ano de frete grátis",
-        text: "Parabéns! Você ganhou 1 ano de frete grátis. Em breve enviaremos mais detalhes."
+        subject: "ENVÍO GRATIS | DOÑA JOSEFA",
+        html: `
+        <h1>FELICIDADES!</h1>
+        <p>¡Gracias por participar! Obtienes 1 año de envío gratis. Tu carnet de tertuliantes es: JOSEFA365</p>
+        <br>
+        <p>ATENCÍON: válido sólo en México</p>
+        <br>
+        <img src="cid:imgEmail" alt="Envío gratis" style="width: 300px; height: auto;">
+    `,
+        attachments: [
+            {
+                filename: "img-email.png",
+                path: "./images/img-email.png",
+                cid: "imgEmail"
+            }
+        ]
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             return res.status(500).json({ error });
         }
-        res.json({ success: true, message: "E-mail enviado!" });
+        res.json({ success: true, message: "Correo electrónico enviado!" });
     });
 });
 

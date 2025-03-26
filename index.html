@@ -44,41 +44,44 @@
       <div class="text">
         <span>AVISO</span>
         <h3>¿TIENES EDAD LEGAL PARA BEBER?</h3>
-        <p>Este sitio web está destinado únicamente a personas mayores de 18 años. El consumo de alcohol debe ser responsable y consciente. Al continuar navegando, confirmas que eres mayor de edad y que cumples con la normativa de consumo de bebidas alcohólicas en tu país. Disfruta con responsabilidad.</p>
-        </div>
-        <div class="buttons-modal">
-          <button class="ok-button" onclick="fecharModal()">SÍ</button>
-          <a href="https://www.responsibility.org/">NO</a>
-        </div>
+        <p>Este sitio web está destinado únicamente a personas mayores de 18 años. El consumo de alcohol debe ser
+          responsable y consciente. Al continuar navegando, confirmas que eres mayor de edad y que cumples con la
+          normativa de consumo de bebidas alcohólicas en tu país. Disfruta con responsabilidad.</p>
+      </div>
+      <div class="buttons-modal">
+        <button class="ok-button" onclick="fecharModal()">SÍ</button>
+        <a href="https://www.responsibility.org/">NO</a>
+      </div>
     </div>
-</div>
+  </div>
 
-<div id="quiz-modal" class="quiz-modal">
-  <div class="quiz-modal-content" id="quiz-content">
+  <div id="quiz-modal" class="quiz-modal">
+    <div class="quiz-modal-content" id="quiz-content">
       <h3 id="quiz-title">¡RESPONDE ESTA PREGUNTA Y OBTÉN 1 AÑO DE ENVÍO GRATIS!</h3>
       <form id="quiz-form" onsubmit="return verificarResposta(event)">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, adipisci?</p>
-          <div class="question">
-            <label><input type="radio" name="quiz" value="Londres" required> RESPOSTA</label><br>
-            <label><input type="radio" name="quiz" value="Paris" required> RESPOSTA</label><br>
-            <label><input type="radio" name="quiz" value="Berlim" required> RESPOSTA</label><br>
-          </div>
-          <div class="buttons">
-              <button type="submit" class="submit-button">COMPROBAR RESPUESTA</button>
-              <button type="button" class="cancel-button" onclick="fecharQuizModal(event)">AHORA NO</button>
-          </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, adipisci?</p>
+        <div class="question">
+          <label><input type="radio" name="quiz" value="Londres" required> RESPOSTA</label><br>
+          <label><input type="radio" name="quiz" value="Paris" required> RESPOSTA</label><br>
+          <label><input type="radio" name="quiz" value="Berlim" required> RESPOSTA</label><br>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="submit-button">COMPROBAR RESPUESTA</button>
+          <button type="button" class="cancel-button" onclick="fecharQuizModal(event)">AHORA NO</button>
+        </div>
       </form>
       <div id="quiz-result" class="hidden">
-          <h3 id="quiz-title"></h3>
-          <p id="quiz-message"></p>
-          <div class="input-email">
-            <p id="email-error" class="error-message"></p>
-            <input type="email" id="email" placeholder="Introduce tu correo electrónico" required>
-            <button type="submit" class="btn-enviar" onclick="fecharQuizModalEmail(event)">PARA ENVIAR</button>
-          </div>
+        <h3 id="quiz-title"></h3>
+        <p id="quiz-message"></p>
+        <div class="input-email">
+          <p id="email-error" class="error-message"></p>
+          <input type="email" id="email" placeholder="Introduce tu correo electrónico" required>
+          <button type="submit" class="btn-enviar" onclick="fecharQuizModalEmail(event)">ENVIAR</button>
+          <button type="submit" class="btn-fechar" onclick="fecharQuizModal(event)">CERRAR</button>
+        </div>
       </div>
+    </div>
   </div>
-</div>
 
   <header>
     <a id="logo" title="Logo" href="#section-one"><img loading="lazy" title="Logo" class="img-responsive"
@@ -99,7 +102,8 @@
             Y RECETAS</a>
         </li>
         <li>
-          <a title="Haga clic aquí para ser dirigido a la sección DONDE COMPRAR" href="#section-five">DÓNDE COMPRAR</a>
+          <a title="Haga clic aquí para ser dirigido a la sección DONDE EXPERIMENTAR" href="#section-five">DÓNDE
+            EXPERIMENTAR</a>
         </li>
         <li>
           <a title="Haga clic aquí para ser dirigido a la sesión de CONTACTO" href="#section-six">CONTACTO</a>
@@ -176,15 +180,27 @@
             <div class="content-right">
               <h2 class="title-h2-sec-two">EL LEGADO DE DOÑA JOSEFA: HISTORIA QUE INSPIRA REVOLUCIONES</h2>
               <p class="p-sec-two">
-                Inspirada en la valentía inquebrantable de Doña Josefa Ortiz de Domínguez, heroína de la independencia de México, nuestra marca es un tributo a su legado de lucha y libertad. Así como ella desafió el destino y encendió la chispa de la revolución, nuestro tequila lleva en cada gota ese mismo espíritu indomable. No es solo una bebida, es historia líquida, una declaración de orgullo y tradición que transforma cada sorbo en un homenaje a la grandeza mexicana.
+                Inspirada en la valentía inquebrantable de Doña Josefa Ortiz de Domínguez, heroína de la independencia
+                de México, nuestra marca es un tributo a su legado de lucha y libertad. Así como ella desafió el destino
+                y encendió la chispa de la revolución, nuestro tequila lleva en cada gota ese mismo espíritu indomable.
+                No es solo una bebida, es historia líquida, una declaración de orgullo y tradición que transforma cada
+                sorbo en un homenaje a la grandeza mexicana.
               </p>
               <h3 class="title-h3-sec-two">CULTURA Y TRADICIÓN: EL ALMA DEL TEQUILA</h3>
               <p class="p-sec-two">
-                El tequila es más que una bebida; es el alma de México, un símbolo de identidad y orgullo. En Doña Josefa, honramos esta tradición con un proceso artesanal que respeta las técnicas ancestrales y la esencia del verdadero tequila. Desde la selección meticulosa de los mejores agaves en las tierras fértiles de Jalisco hasta una destilación cuidada, cada gota refleja pasión, dedicación y autenticidad. Más que un destilado, es una historia embotellada, lista para ser brindada y celebrada.
+                El tequila es más que una bebida; es el alma de México, un símbolo de identidad y orgullo. En Doña
+                Josefa, honramos esta tradición con un proceso artesanal que respeta las técnicas ancestrales y la
+                esencia del verdadero tequila. Desde la selección meticulosa de los mejores agaves en las tierras
+                fértiles de Jalisco hasta una destilación cuidada, cada gota refleja pasión, dedicación y autenticidad.
+                Más que un destilado, es una historia embotellada, lista para ser brindada y celebrada.
               </p>
               <h3 class="title-h3-sec-two">INDEPENDENCIA DE MÉXICO: EL ESPÍRITU DE UNA REVOLUCIÓN</h3>
               <p class="p-sec-two">
-                Así como la independencia fue un nuevo amanecer para México, Doña Josefa es el vínculo entre el pasado y el presente. Nuestro tequila no solo rinde homenaje a una mujer visionaria, sino que invita a celebrar la libertad, la cultura y la grandeza de nuestra tierra. Cada gota es un tributo al coraje y la determinación que forjaron la historia de una nación, transformando cada brindis en un acto de orgullo y tradición.
+                Así como la independencia fue un nuevo amanecer para México, Doña Josefa es el vínculo entre el pasado y
+                el presente. Nuestro tequila no solo rinde homenaje a una mujer visionaria, sino que invita a celebrar
+                la libertad, la cultura y la grandeza de nuestra tierra. Cada gota es un tributo al coraje y la
+                determinación que forjaron la historia de una nación, transformando cada brindis en un acto de orgullo y
+                tradición.
               </p>
               <div class="btn-know-more btn-sec-two">
                 <a title="Haga clic aquí para contactarnos vía WhatsApp" href="https://wa.me/5255271603905?text=Hola%2C%20vine%20del%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n!
@@ -240,7 +256,7 @@
         <div class="content-sec-three">
           <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
             <div class="content-left">
-              <h2 class="title-h2-sec-three">LA ESENCIA DEL TEQUILA HONESTO A TRAVES DE UM PROCESO ARTESANAL</h2>
+              <h2 class="title-h2-sec-three">LA ESENCIA DEL TEQUILA HONESTO A TRAVES DE UN PROCESO ARTESANAL</h2>
               <p class="p-sec-three">
                 Doña Josefa es un tributo al auténtico tequila mexicano.
                 Elaborado con agave azul de Jalisco, cada botella refleja
@@ -348,8 +364,7 @@
           <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12"></div>
           <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div class="content-right">
-              <img loading="lazy" class="img-responsive" src="../images/tequila.webp" alt="Tequila"
-                title="Tequila">
+              <img loading="lazy" class="img-responsive" src="../images/tequila.webp" alt="Tequila" title="Tequila">
             </div>
           </div>
         </div>
@@ -400,14 +415,14 @@
         <div class="content-sec-four">
           <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <div class="content-left">
-              <img loading="lazy" class="img-responsive img-sec-four" src="../images/shot-tequila.webp" alt="Tequila"
+              <img loading="lazy" class="img-responsive img-sec-four" src="../images/img-tequila-2.webp" alt="Tequila"
                 title="Tequila">
             </div>
           </div>
           <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12"></div>
           <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="content-right">
-              <h2 class="title-h2-sec-four">EL ARTE DE CREAR CÓCTELES CON DOÑA JOSEFA</h2>
+              <h2 class="title-h2-sec-four">EL ARTE DE OREAR COCTELES CON DOÑA JOSEFA</h2>
               <p class="p-sec-four">
                 Descubre nuevas formas de disfrutar la auténtica tradición
                 mexicana con nuestra selección especial de cócteles. Doña
@@ -454,62 +469,56 @@
               </div>
               <div class="accordion-item p-sec-four">
                 <div class="accordion-header">
-                  PÁSION MEXICANA <i class="fa-solid fa-angle-right icon"></i>
-                </div>
-                <div class="accordion-content">
-                  <p>Ingredientes:</p>
-                  <ul>
-                    <li>50ml de Tequila Doña Josefa Reposado</li>
-                    <li>30ml de jugo de maracuyá</li>
-                    <li>20ml de miel de agave</li>
-                    <li>15ml de licor de cassis</li>
-                    <li>Hielo</li>
-                    <li>Pimienta rosa para decorar</li>
-                  </ul>
-                  <p>Modo de preparación:</p>
-                  <ol>
-                    <li>
-                      En una coctelera, mezcla todos los ingredientes con
-                      hielo.
-                    </li>
-                    <li>Agita bien y cuela en un vaso bajo con hielo.</li>
-                    <li>
-                      Finaliza con unas cuantas pimientas rosas por encima.
-                    </li>
-                    <li>
-                      Sirve y disfruta la combinación perfecta entre dulzura e
-                      intensidad del tequila.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-              <div class="accordion-item p-sec-four">
-                <div class="accordion-header">
-                  ESPÍRITU DE JALISCO
+                  EL VALIENTE
                   <i class="fa-solid fa-angle-right icon"></i>
                 </div>
                 <div class="accordion-content">
                   <p>Ingredientes:</p>
                   <ul>
-                    <li>50ml de Tequila Doña Josefa Añejo</li>
-                    <li>10ml de licor de café</li>
-                    <li>10ml de vermut dulce</li>
-                    <li>15ml de licor de cassis</li>
+                    <li>60ml de tequila blanco</li>
+                    <li>30ml de licor de naranja (Triple Sec o Cointreau)</li>
+                    <li>20ml de jugo de limón fresco</li>
+                    <li>10ml de jarabe de agave</li>
+                    <li>3 rodajas de chile jalapeño (opcional, para un toque picante)</li>
                     <li>Hielo</li>
-                    <li>Cáscara de naranja para aromatizar</li>
+                    <li>Sal y pimentón para el borde del vaso</li>
                   </ul>
                   <p>Modo de preparación:</p>
                   <ol>
-                    <li>
-                      Mezcla todos los ingredientes en un vaso mezclador con
-                      hielo.
+                    <li>Pasa una rodaja de limón por el borde del vaso y sumérgelo en la mezcla de sal y pimentón.</li>
+                    <li>En una coctelera, añade el tequila, el licor de naranja, el jugo de limón, el jarabe de agave y
+                      las rodajas de jalapeño.</li>
+                    <li>Agrega hielo y agita vigorosamente durante 10 segundos.</li>
+                    <li>Cuela y sirve en un vaso bajo con hielo.</li>
+                    <li>Decora con una rodaja de jalapeño en el borde y ¡disfruta!</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="accordion-item p-sec-four">
+                <div class="accordion-header">
+                  REBELDE AZTECA
+                  <i class="fa-solid fa-angle-right icon"></i>
+                </div>
+                <div class="accordion-content">
+                  <p>Ingredientes:</p>
+                  <ul>
+                    <li>50ml de tequila blanco</li>
+                    <li>30ml de licor de hierbas (como Chartreuse o Ancho Reyes)</li>
+                    <li>25ml de jugo de limón fresco</li>
+                    <li>15ml de jarabe de miel o agave</li>
+                    <li>3 hojas de albahaca fresca</li>
+                    <li>Agua tónica</li>
+                    <li>Hielo</li>
+                    <li>Rodaja de limón y albahaca para decorar</li>
+                  </ul>
+                  <p>Modo de preparación:</p>
+                  <ol>
+                    <li>En una coctelera, machaca suavemente las hojas de albahaca con el jugo de limón y el jarabe.
                     </li>
-                    <li>Remueve suavemente por unos 15 segundos.</li>
-                    <li>Cuela en un vaso bajo con hielo.</li>
-                    <li>
-                      Finaliza con una cáscara de naranja torcida sobre la
-                      bebida para liberar sus aromas.
-                    </li>
+                    <li>Agrega el tequila, el licor de hierbas y hielo. Agita bien.</li>
+                    <li>Cuela en un vaso alto con hielo y completa con agua tónica.</li>
+                    <li>Decora con una rodaja de limón y una hoja de albahaca.</li>
+                    <li>¡Brinda por el espíritu rebelde de México y disfruta!</li>
                   </ol>
                 </div>
               </div>
@@ -526,57 +535,60 @@
               </p>
               <div class="btn-contact-us btn-sec-four">
                 <a title="Haga clic aquí para contactarnos vía WhatsApp" href="https://wa.me/5255271603905?text=Hola%2C%20vine%20del%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n!
-                ">HAGA SUS PREGUNTAS <i class="fa-solid fa-arrow-right"></i></a>
+                  ">HAGA SUS PREGUNTAS <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </section>
     <section id="section-five">
       <div class="container">
         <div class="text">
-          <h2>¿DÓNDE COMPRAR?</h2>
+          <h2>¿DÓNDE EXPERIMENTAR?</h2>
           <p>
             Descubre dónde encontrar Doña Josefa y disfruta del auténtico
             sabor del tequila honesto.
           </p>
         </div>
-        <div class="content-sec-five">
-          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-            <div class="content-left">
-              <h3>DISTRIBUIDORES Y REVENDEDORES</h3>
-              <p>
-                Nuestra red de distribuidores seleccionados garantiza que
-                encuentres Doña Josefa en los mejores establecimientos.
-                Explora nuestra lista de revendedores oficiales y adquiere tu
-                tequila con confianza.
-              </p>
-              <a title="Haga clic aquí para acceder al revendedor" href="/">DISTRIBUIDOR <i
-                  class="fa-solid fa-arrow-right-long"></i></a>
-              <a title="Haga clic aquí para acceder al revendedor" href="/">DISTRIBUIDOR <i
-                  class="fa-solid fa-arrow-right-long"></i></a>
-              <a title="Haga clic aquí para acceder al revendedor" href="/">DISTRIBUIDOR <i
-                  class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="content-michelin">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="text-guia">
+                  <h3>EXPERIENCIA DOÑA JOSEFA</h3>
+                  <p>
+                    Nuestro tequila se encuentra estrategicamente em lugares que harán tu experiencia gastronômica, um
+                    momento sensacional.
+                  </p>
+                  <p>Descubre el sabor de la independencia en cada sorbo. Doña Josefa no es solo un tequila, es una experiencia que rinde homenaje a la tradición y al espíritu revolucionario de México. Elaborado con agaves seleccionados y un proceso artesanal impecable, cada gota encierra historia, pasión y carácter.</p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12"></div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="btn-guia">
+                  <a title="Haga clic aquí para acceder al revendedor" href="/">GUIA MICHELIN <i
+                    class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12"></div>
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="content-right">
-              <h3>COMPRA ONLINE</h3>
-              <p>
-                Prefieres la comodidad de comprar desde casa? Visita nuestra
-                tienda en línea y recibe Doña Josefa directamente en tu
-                puerta. Haz clic en el enlace y elige tu botella favorita.
-              </p>
-              <a title="Haz clic aquí para acceder a nuestra tienda" href="/">MERCADO LIBRE
-                <i class="fa-solid fa-arrow-right-long"></i></a>
-              <a title="Haz clic aquí para acceder a nuestra tienda" href="/">AMAZON
-                <i class="fa-solid fa-arrow-right-long"></i></a>
-              <a title="Haz clic aquí para acceder a nuestra tienda" href="/">COMPRA ONLINE
-                <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="content-online">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <h3>COMPRA ONLINE</h3>
+                <p>
+                  ¿Prefieres la comodidad de comprar desde casa sin complicaciones? Ahora puedes disfrutar del auténtico sabor de Doña Josefa sin salir de tu hogar. Visita nuestra tienda en línea, explora nuestra selección de tequilas premium y elige la botella perfecta para cada ocasión. Con solo unos clics, recibirás Doña Josefa directamente en tu puerta, listo para brindar por los momentos más especiales. ¡Haz clic en el enlace y lleva a casa la esencia de México en cada sorbo!
+                </p>
+              </div>
+              <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12"></div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <a title="Haz clic aquí para acceder a nuestra tienda" href="/">MERCADO LIBRE
+                  <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a title="Haz clic aquí para acceder a nuestra tienda" href="/">AMAZON
+                  <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a title="Haz clic aquí para acceder a nuestra tienda" href="/">DIRECTO
+                  <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
             </div>
-          </div>
         </div>
         <div class="container">
           <div class="local-content">
@@ -597,13 +609,10 @@
                 ¿Quieres formar parte de la historia de Doña Josefa? Estamos
                 abiertos a nuevas oportunidades de negocio y colaboraciones.
               </p>
-              <h3>DISTRIBUIDORES Y REVENDEDORES</h3>
-              <p>
-                Si deseas ofrecer Doña Josefa en tu establecimiento, completa
-                nuestro formulario y nos pondremos en contacto contigo. Únete
-                a nuestra red de distribuidores y lleva el auténtico sabor del
-                tequila honesto a más personas.
-              </p>
+              <h3>UBICACIÓN</h3>
+              <iframe title="ubicación"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.798061487637!2d-99.17301542411798!3d19.42112924104595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff48603f8723%3A0xf127d41db5cb9b43!2sPuebla%20303%2C%20Roma%20Nte.%2C%20Cuauht%C3%A9moc%2C%2006700%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1spt-BR!2sbr!4v1741824626438!5m2!1spt-BR!2sbr"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12"></div>
@@ -619,7 +628,7 @@
                   <textarea id="message" name="message" rows="4" required
                     placeholder="Escribe tu mensaje aquí"></textarea>
                   <div class="btn-submit">
-                    <button type="submit">PARA ENVIAR</button>
+                    <button type="submit">ENVIAR</button>
                   </div>
                 </form>
               </div>
@@ -661,7 +670,7 @@
             </li>
             <li>
               <a title="Haga clic aquí para ser dirigido a la sesión de COCTELERÍA Y RECETAS" href="#section-five"><i
-                  class="fa-solid fa-chevron-right"></i>DÓNDE COMPRAR</a>
+                  class="fa-solid fa-chevron-right"></i>DÓNDE EXPERIMENTAR</a>
             </li>
             <li>
               <a title="Haga clic aquí para ser dirigido a la sesión de CONTACTO" href="#section-six"><i

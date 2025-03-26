@@ -62,21 +62,12 @@
     margin-right: 15px;
 }
 
-#quiz-result .btn-enviar{
-    background: var(--fifth-color);
-    color: var(--white);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
 #quiz-message{
     color: var(--black);
 }
 
 #quiz-result input{
-    width: 70%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -87,6 +78,25 @@
     justify-content: center;
     gap: 10px;
     align-items: center;
+}
+
+.input-email .btn-enviar{
+    background: var(--fifth-color);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+
+.input-email .btn-fechar{
+    background: var(--third-color);
+    color: var(--black);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid var(--fifth-color);
+    width: 100px;
 }
 
 .submit-button, .cancel-button {
@@ -132,6 +142,10 @@
     }
 
     #quiz-result .btn-enviar{
+        width: 100%;
+    }
+
+    #quiz-result .btn-fechar{
         width: 100%;
     }
 }

@@ -25,7 +25,8 @@
   width: 100% !important;
   height: 100vh;
   object-fit: cover;
-  filter: brightness(40%);
+  object-position: center calc(70%);
+  filter: brightness(30%);
 }
 
 
@@ -454,21 +455,19 @@
   font-family: var(--font-title);
 }
 
-#section-five .content-sec-five {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 70px;
-  gap: 50px;
-}
-
-#section-five .content-sec-five h3 {
+#section-five h3 {
   color: var(--first-color) !important;
   font-family: var(--font-title);
 }
 
-#section-five .content-left a {
+#section-five .content-michelin{
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-top: 60px;
+}
+
+#section-five .content-michelin a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -481,13 +480,13 @@
   text-decoration: none;
 }
 
-#section-five .content-left a:hover {
+#section-five .content-michelin a:hover {
   margin-left: 30px;
   background-color: var(--second-color);
   color: var(--white);
 }
 
-#section-five .content-left i {
+#section-five .content-michelin i {
   color: var(--black);
   font-size: 20px;
 }
@@ -502,7 +501,13 @@
   border: 5px solid var(--first-color);
 }
 
-#section-five .content-right a {
+#section-five .content-online{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+#section-five .content-online a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -515,12 +520,12 @@
   text-decoration: none;
 }
 
-#section-five .content-right i {
+#section-five .content-online i {
   color: var(--black);
   font-size: 20px;
 }
 
-#section-five .content-right a:hover {
+#section-five .content-online a:hover {
   margin-left: 30px;
   background-color: var(--second-color);
   color: var(--white);
@@ -544,6 +549,12 @@
 h3 {
   color: var(--second-color) !important;
   font-family: var(--font-title);
+}
+
+#section-six .content-sec-six iframe{
+  width: 100%;
+  height: 300px;
+  border: 5px solid var(--first-color);
 }
 
 #section-six form {
