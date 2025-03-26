@@ -58,6 +58,11 @@
     width: 250px;
 }
 
+.quiz-modal .question span{
+    display: inline-block;
+    width: 120px;
+}
+
 .quiz-modal .question input{
     margin-right: 15px;
 }

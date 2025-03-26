@@ -13,8 +13,8 @@ const transporter = nodemailer.createTransport({
     port: 3535,
     secure: true,
     auth: {
-        user: process.env.EMAIL_USER, // Seu email
-        pass: process.env.EMAIL_PASS  // Senha do app
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS 
     }
 });
 
@@ -24,7 +24,6 @@ app.post("/send-email", (req, res) => {
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: email,
-        // basta editar a mensagem abaixo com o título e a mensagem do email
         subject: "ENVÍO GRATIS | DOÑA JOSEFA",
         html: `
         <h1>FELICIDADES!</h1>
