@@ -35,16 +35,21 @@ function fecharQuizModalEmail(event) {
   event.preventDefault();
   const emailInput = document.getElementById("email");
   const errorMessage = document.getElementById("email-error");
+  const successMessage = document.getElementById("email-success");
+
+  errorMessage.textContent = "";
+  errorMessage.classList.remove("fade-in");
+  successMessage.textContent = "";
+  successMessage.classList.remove("fade-in");
+  emailInput.style.border = "";
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())) {
-    errorMessage.textContent =
-      "Proporcione una dirección de correo electrónico válida antes de continuar.";
+    errorMessage.textContent = "Proporcione una dirección de correo electrónico válida antes de continuar.";
+    errorMessage.style.color = "red";
+    errorMessage.classList.add("fade-in");
     emailInput.style.border = "2px solid red";
     return;
   }
-
-  errorMessage.textContent = "";
-  emailInput.style.border = "";
 
   fetch("http://localhost:3001/send-email", {
     method: "POST",
@@ -54,11 +59,24 @@ function fecharQuizModalEmail(event) {
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
-        alert("¡Correo electrónico enviado exitosamente!");
-        fecharQuizModal();
+        successMessage.textContent = "¡Correo electrónico enviado exitosamente!";
+        successMessage.style.color = "green";
+        successMessage.classList.add("fade-in");
+
+        setTimeout(() => {
+          fecharQuizModal();
+        }, 2000); 
       } else {
-        alert("Error al enviar el correo electrónico.");
+        errorMessage.textContent = "No se puede enviar correo electrónico. Por favor inténtalo de nuevo.";
+        errorMessage.style.color = "red";
+        errorMessage.classList.add("fade-in");
       }
     })
-    .catch((error) => console.error("Erro:", error));
+    .catch((error) => {
+      console.error("Erro:", error);
+      errorMessage.textContent = "No se puede enviar correo electrónico. Por favor inténtalo de nuevo.";
+      errorMessage.style.color = "red";
+      errorMessage.classList.add("fade-in");
+    });
 }
+

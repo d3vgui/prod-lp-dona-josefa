@@ -83,6 +83,7 @@
     justify-content: center;
     gap: 10px;
     align-items: center;
+    flex-direction: column;
 }
 
 .input-email .btn-enviar{
@@ -91,7 +92,7 @@
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-    width: 200px;
+    width: 60%;
 }
 
 .input-email .btn-fechar{
@@ -101,7 +102,7 @@
     border: none;
     cursor: pointer;
     border: 2px solid var(--fifth-color);
-    width: 100px;
+    width: 60%;
 }
 
 .submit-button, .cancel-button {
@@ -135,6 +136,15 @@
     font-size: 14px;
     margin-top: 5px;
 }
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 
 @media (max-width: 1143px){
 
