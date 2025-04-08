@@ -11,7 +11,7 @@ const secTwo = gsap.timeline({
 secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
   opacity: 0,
   y: 40,
-  duration: 2,
+  duration: 2.5,
   ease: "power3.out",
 })
   secTwo.from(
@@ -19,7 +19,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
     {
       opacity: 0,
       x: -50,
-      duration: 1,
+      duration: 1.5,
       ease: "power3.out",
       stagger: 0.3,
     },
@@ -30,7 +30,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
     {
       opacity: 0,
       y: 30,
-      duration: 1,
+      duration: 1.5,
       ease: "power3.out",
     },
     1
@@ -40,7 +40,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
     {
       opacity: 0,
       y: -70,
-      duration: 0.8,
+      duration: 1.3,
       ease: "power3.out",
     },
     "0.7"
@@ -56,7 +56,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
   secTertulia.from([".title-h2-sec-tertulia", ".title-h3-sec-tertulia"], {
     opacity: 0,
     y: 40,
-    duration: 2,
+    duration: 2.5,
     ease: "power3.out",
   })
     secTertulia.from(
@@ -64,7 +64,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
       {
         opacity: 0,
         x: -50,
-        duration: 1,
+        duration: 1.5,
         ease: "power3.out",
         stagger: 0.3,
       },
@@ -75,7 +75,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
       {
         opacity: 0,
         y: 30,
-        duration: 1,
+        duration: 1.5,
         ease: "power3.out",
       },
       1
@@ -85,7 +85,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
       {
         opacity: 0,
         y: -70,
-        duration: 0.8,
+        duration: 1.3,
         ease: "power3.out",
       },
       "0.7"
@@ -102,7 +102,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
       secThree.from([".title-h2-sec-three", ".title-h3-sec-three"], {
         opacity: 0,
         y: 40,
-        duration: 2,
+        duration: 2.5,
         ease: "power3.out",
       })
         secThree.from(
@@ -110,7 +110,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
           {
             opacity: 0,
             x: -50,
-            duration: 1,
+            duration: 1.5,
             ease: "power3.out",
             stagger: 0.3,
           },
@@ -121,7 +121,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
           {
             opacity: 0,
             y: 30,
-            duration: 1,
+            duration: 1.5,
             ease: "power3.out",
           },
           1
@@ -131,7 +131,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
           {
             opacity: 0,
             y: -70,
-            duration: 0.8,
+            duration: 1.3,
             ease: "power3.out",
           },
           "0.7"
@@ -148,7 +148,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
           secFour.from([".title-h2-sec-four", ".title-h3-sec-four"], {
             opacity: 0,
             y: 40,
-            duration: 2,
+            duration: 2.5,
             ease: "power3.out",
           })
             secFour.from(
@@ -156,7 +156,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
               {
                 opacity: 0,
                 x: -50,
-                duration: 1,
+                duration: 1.5,
                 ease: "power3.out",
                 stagger: 0.3,
               },
@@ -167,7 +167,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
               {
                 opacity: 0,
                 y: 30,
-                duration: 1,
+                duration: 1.5,
                 ease: "power3.out",
               },
               1
@@ -177,7 +177,7 @@ secTwo.from([".title-h2-sec-two", ".title-h3-sec-two"], {
               {
                 opacity: 0,
                 y: -70,
-                duration: 0.8,
+                duration: 1.3,
                 ease: "power3.out",
               },
               "0.7"
