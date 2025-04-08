@@ -13,7 +13,7 @@ function verificarResposta(event) {
 
   quizTitle.textContent = "FELICIDADES";
   quizMessage.textContent =
-    resposta === "Ambas opciones"
+    resposta === "Agave"
       ? "¡Respuesta correcta! Felicitaciones, has ganado 1 año de envío gratis. Deja tu correo electrónico y espera un momento para que podamos enviarte los detalles."
       : "Felicitaciones por intentarlo, ¡obtuviste 1 año de envío gratis! Deja tu correo electrónico y espera un momento para que podamos enviarte los detalles.";
 
